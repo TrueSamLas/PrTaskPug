@@ -1,0 +1,79 @@
+- var docName = "MySite"
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title= docName
+        style 
+            include styles/style.scss
+    body         
+        include modules/header
+
+        div
+            .banner 
+                img(src="/src/img/banner.jpg", alt="")
+            .wrapper
+                .about
+                    h1 Страхование может быть честным, полезным и выгодным
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, est. Error commodi laboriosam minima. Expedita nesciunt quasi iure odit a, voluptatem vel distinctio consequatur ipsam obcaecati temporibus consequuntur itaque enim maiores laudantium fuga, autem nulla!
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius consequuntur delectus quis deleniti. Iure cumque deserunt nihil similique, ab inventore? Officia similique aliquid sint, quae quidem autem! Incidunt aliquid, asperiores dolore eius magnam fuga ex.
+                    h2 Если наступил страховой случай , расскажем как действовать
+                    ol 
+                        li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod facere nobis corporis!
+                        li Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sunt cumque ipsam esse laudantium!
+                        li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, sint!
+
+        .service 
+            .wrapper
+                h1 Таким должно быть страхование
+                .items 
+                    .item 
+                        img(src="/src/img/1.jpg", alt="") 
+                        h2 Полный онлайн
+                        p без бумаг и поездок в офис
+                    .item 
+                        img(src="/src/img/2.jpg", alt="") 
+                        h2 Быстрые выплаты
+                        p от 2 дней с подачи документов
+                    .item 
+                        img(src="/src/img/3.jpg", alt="") 
+                        h2 Тонкая настройка
+                        p рисков сумм и сроков покрытия
+                    .item 
+                        img(src="/src/img/4.jpg", alt="") 
+                        h2 Прозрачные условия
+                        p без список и звездочек
+        
+        .forma 
+            .wrapper
+                h1 Подписаться на новостную рассылку
+                form(action="")
+                    .email
+                        input(type="email" placeholder="   Email")
+                    .submit
+                        input(type="submit", value="Отправить")
+        
+        .info-table 
+            .wrapper 
+                h1 Страховка 
+                table 
+                    tr 
+                        th Название
+                        th Что включает
+                        th Цена
+                    tr 
+                        td Защита квартиры
+                        td(rowspan = '2') Пожар, Затопление, Ответсвенность перед соседями, Перепад напряжения, Стихийные бедствия и ЧС
+                        td(rowspan = '2') от 194 Р/мес
+                    tr
+                        td Защита дома
+                    tr
+                        td Защита питомцев
+                        td Получит травму, Заболеет, Пострадает от укуса или инфекции, Причинит кому-то ущерб, Потребуется допрасходов
+                        td Индивидуальная цена
+                    tr
+
+        include modules/footer

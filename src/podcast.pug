@@ -1,0 +1,31 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title podcast
+        style 
+            include styles/style.scss 
+    body 
+        include modules/header
+
+        .service 
+            .wrapper
+                h1 Таким должно быть страхование
+                .items 
+                    .item 
+                        img(src="/src/img/1.jpg", alt="") 
+                        h2 Полный онлайн
+                        p без бумаг и поездок в офис
+                    .item 
+                        img(src="/src/img/2.jpg", alt="") 
+                        h2 Быстрые выплаты
+                        p от 2 дней с подачи документов
+                    .item 
+                        img(src="/src/img/3.jpg", alt="") 
+                        h2 Тонкая настройка
+                        p рисков сумм и сроков покрытия
+                    .item 
+                        img(src="/src/img/4.jpg", alt="") 
+                        h2 Прозрачные условия
+                        p без список и звездочек

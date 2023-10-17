@@ -1,0 +1,30 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title music
+        style 
+            include styles/style.scss 
+    body 
+        include modules/header
+
+        .info-table 
+            .wrapper 
+                h1 Страховка 
+                table 
+                    tr 
+                        th Название
+                        th Что включает
+                        th Цена
+                    tr 
+                        td Защита квартиры
+                        td(rowspan = '2') Пожар, Затопление, Ответсвенность перед соседями, Перепад напряжения, Стихийные бедствия и ЧС
+                        td(rowspan = '2') от 194 Р/мес
+                    tr
+                        td Защита дома
+                    tr
+                        td Защита питомцев
+                        td Получит травму, Заболеет, Пострадает от укуса или инфекции, Причинит кому-то ущерб, Потребуется допрасходов
+                        td Индивидуальная цена
+                    tr
